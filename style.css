@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+/* nav{
+    display: grid;
+    height: 25vh;
+    width: 100%;
+    padding: 20px 40px;
+} */
+
+nav {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    padding: 20px 40px ;
+}
+
+.logo {
+    width: 30vw;
+}
+
+.nav-items {
+    display: flex;
+    width: 70vw;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-items li {
+    font-size: 20px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: rgba(4,98,234,1);
+    border: 2px solid rgba(4,98,234,1);
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+.hero{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+align-items: center;
+margin-top: 50px;
+}
+.left {
+    width: 600px;
+    padding-left: 100px;
+    justify-self: center;
+
+}
+.left h1{
+align-self: center;
+    line-height: 70px;
+    font-size: 50px;   
+    
+}
+.left p {
+    font-size: 13px;
+    font-weight: 200;
+ margin: 10px 0 ;
+ padding-bottom: 30px;
+}
+.left a{
+    
+        text-decoration: none;
+        background: rgb(4,98,234);
+        background: linear-gradient(5deg, rgba(4,98,234,1) 20%, rgba(9,193,248,1) 80%); 
+        width: fit-content;
+        padding: 15px 40px;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 700;
+    
+    }
+
+.right {
+    justify-self: center;
+}
+.right img{
+    height: 400px;
+}
+
+.service-top{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 100px 100px;
+}
+.service-top h1{
+    font-size: 50px;
+}
+.service-top p{
+    font-weight: 400;
+}
+.service-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+    padding: 20px 100px;
+    justify-content: center;
+}
+
+
+/* pricing  */
+
+.pricing{
+    margin-top: 100px;
+    /* border: black 1px solid ; */
+    background: rgb(4,98,234);
+    background: linear-gradient(5deg, rgba(4,98,234,1) 20%, rgba(9,193,248,1) 80%);
+    height: 120vh;
+}
+.price-heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+.price-cards{
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr);
+    align-items: center;
+    justify-content: space-between;
+    /* border: black solid 1px; */
+    /* height: 100vh; */
+column-gap: 50px;
+}
+
+.price-card{
+    /* border: black 1px solid ; */
+    height: 90vh;
+    justify-self: center;
+    border-radius: 20PX;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card p {font-size: 20px;
+    margin: 20px 20px;
+
+}
+.price-card h1{
+    margin: 10px 20px;
+}
+.price-card:nth-child(2) .card-heading{
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: -1px 0;
+    border-radius: 20px;
+}
+.price-rate span, .price-rate p{
+    font-size: 20px;
+    color: #798196;
+}
+.price-rate a {
+    text-decoration: none;
+    border: 2px solid rgb(4,98,234);
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: rgba(4,98,234,1);
+    font-weight: 600;
+}
+.card-list i   {
+    color: #1fdb93;
+}
+.review{
+    padding:40px;
+}
+.review-top{
+    display: grid;
+    justify-items: center;
+}
+
+.review-bottom{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2 1fr);
+    row-gap: 50px;
+    column-gap: 30px;
+
+}
+.review-card{
+    border: #3f3f3f solid .3px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.review-content{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.review-content h1{
+    font-size: 23px;
+    color: #3f3f3f;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #3f3f3f;
+}
+.register{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:url(./images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* width: 100%; */
+    height: 30vh;
+    padding: 60px;
+    /* border: black solid 1px; */
+}
+
+.about  {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+margin: 20PX;
+}
+.list-items{
+    list-style: none;
+    margin-top: 30px;
+}
+.list-items :nth-child(1){
+    font-size: 25px;
+    font-weight: 600;
+}
+.list-items li{
+text-transform: uppercase;
+margin-top:20px
+}
+
+.socials{
+margin-top: 20px;
+}
+
+.links-1 , .links-2 , .links-3{
+    justify-self: center;
+}
+
+
+.socials ul{
+    display: flex;
+list-style: none;
+}
+
+.socials img {
+    height: 50px;
+}
+
+@media (max-width:700px){
+    body {
+        margin:10px 10px ;
+        
+    }
+    .nav-items{
+        display: none;
+    }
+    .left, .right{
+        padding: 0px ;
+    }
+    .hero img{
+        display: none;
+    }
+.hero h1 {
+       width: auto;
+        margin: 0;
+        padding: 0 ;
+        
+    }
+    nav
+    .service-top{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .service-top h1{
+        font-size:40px;
+
+    }
+}
